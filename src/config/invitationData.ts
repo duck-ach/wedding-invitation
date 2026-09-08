@@ -104,7 +104,7 @@ export interface InvitationData {
   wedding: {
     /** ISO 8601 datetime, local to the venue */
     dateTimeIso: string;
-    dateDisplay: string; // e.g. "2026년 11월 14일 토요일"
+    dateDisplay: string; // e.g. "2027년 8월 29일 일요일"
     timeDisplay: string; // e.g. "오후 1시 30분"
   };
   greeting: {
@@ -141,21 +141,21 @@ export interface InvitationData {
 
 export const invitationData: InvitationData = {
   meta: {
-    siteTitle: "혜진 ♥ 해준의 결혼식에 초대합니다",
-    ogDescription: "2026년 11월 14일 토요일, 저희 두 사람이 하나가 되는 날 함께해 주세요.",
+    siteTitle: "혜진 ♥ 병현의 결혼식에 초대합니다",
+    ogDescription: "2027년 8월 29일 일요일, 저희 두 사람이 하나가 되는 날 함께해 주세요.",
     ogImageUrl: "/images/hero.jpg",
   },
 
   couple: {
     groom: {
-      name: "김해준",
-      nameEn: "Haejun Kim",
+      name: "임병현",
+      nameEn: "Byeonghyeon Lim",
       relation: "신랑",
       phone: "010-1234-5678",
     },
     bride: {
-      name: "이혜진",
-      nameEn: "Hyejin Lee",
+      name: "조혜진",
+      nameEn: "Hyejin Cho",
       relation: "신부",
       phone: "010-8765-4321",
     },
@@ -164,8 +164,8 @@ export const invitationData: InvitationData = {
   },
 
   wedding: {
-    dateTimeIso: "2026-11-14T13:30:00+09:00",
-    dateDisplay: "2026년 11월 14일 토요일",
+    dateTimeIso: "2027-08-29T13:30:00+09:00",
+    dateDisplay: "2027년 8월 29일 일요일",
     timeDisplay: "오후 1시 30분",
   },
 
@@ -184,7 +184,7 @@ export const invitationData: InvitationData = {
       "귀한 걸음으로 축복해 주시면",
       "더없이 큰 기쁨으로 간직하겠습니다.",
     ],
-    signature: "김해준 · 이혜진 드림",
+    signature: "임병현 · 조혜진 드림",
   },
 
   venue: {
@@ -217,14 +217,14 @@ export const invitationData: InvitationData = {
 
   familyGroom: {
     self: {
-      name: "김해준",
-      nameEn: "Haejun Kim",
+      name: "임병현",
+      nameEn: "Byeonghyeon Lim",
       relation: "신랑",
       phone: "010-1234-5678",
     },
     father: {
-      name: "김민석",
-      nameEn: "Minseok Kim",
+      name: "임민석",
+      nameEn: "Minseok Lim",
       relation: "신랑 아버지",
       phone: "010-1111-2222",
     },
@@ -237,14 +237,14 @@ export const invitationData: InvitationData = {
   },
   familyBride: {
     self: {
-      name: "이혜진",
-      nameEn: "Hyejin Lee",
+      name: "조혜진",
+      nameEn: "Hyejin Cho",
       relation: "신부",
       phone: "010-8765-4321",
     },
     father: {
-      name: "이준호",
-      nameEn: "Junho Lee",
+      name: "조준호",
+      nameEn: "Junho Cho",
       relation: "신부 아버지",
       phone: "010-5555-6666",
     },
@@ -260,16 +260,16 @@ export const invitationData: InvitationData = {
     groom: {
       label: "신랑측 마음 전하실 곳",
       accounts: [
-        { bankName: "국민은행", accountNumber: "123456-78-901234", holderName: "김해준" },
-        { bankName: "신한은행", accountNumber: "110-123-456789", holderName: "김민석" },
+        { bankName: "국민은행", accountNumber: "123456-78-901234", holderName: "임병현" },
+        { bankName: "신한은행", accountNumber: "110-123-456789", holderName: "임민석" },
         { bankName: "농협은행", accountNumber: "302-1234-5678-91", holderName: "박선영" },
       ],
     },
     bride: {
       label: "신부측 마음 전하실 곳",
       accounts: [
-        { bankName: "우리은행", accountNumber: "1002-123-456789", holderName: "이혜진" },
-        { bankName: "하나은행", accountNumber: "123-456789-01234", holderName: "이준호" },
+        { bankName: "우리은행", accountNumber: "1002-123-456789", holderName: "조혜진" },
+        { bankName: "하나은행", accountNumber: "123-456789-01234", holderName: "조준호" },
         { bankName: "카카오뱅크", accountNumber: "3333-12-3456789", holderName: "최은경" },
       ],
     },
@@ -342,7 +342,7 @@ export const invitationData: InvitationData = {
   ],
 
   profileFields: [
-    { label: "생일", groomValue: "1994.03.12", brideValue: "1995.07.28" },
+    { label: "생일", groomValue: "1994.01.01", brideValue: "2000.04.02" },
     { label: "MBTI", groomValue: "ISTJ", brideValue: "ENFP" },
     { label: "취미", groomValue: "등산, 사진", brideValue: "베이킹, 여행" },
     { label: "직업", groomValue: "소프트웨어 엔지니어", brideValue: "인테리어 디자이너" },
@@ -394,7 +394,7 @@ export const invitationData: InvitationData = {
     {
       id: "seed-2",
       name: "이도현",
-      message: "해준아 축하한다! 신혼여행 가서도 계속 알콩달콩하길~",
+      message: "병현아 축하한다! 신혼여행 가서도 계속 알콩달콩하길~",
       song: "폴킴 - 모든 날, 모든 순간",
       createdAtIso: "2026-08-22T14:30:00+09:00",
     },
