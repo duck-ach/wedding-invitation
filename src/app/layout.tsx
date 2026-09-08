@@ -24,7 +24,11 @@ const nanumPenScript = Nanum_Pen_Script({
   weight: "400",
 });
 
+const deployedHost = process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
+const siteUrl = deployedHost ? `https://${deployedHost}` : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: invitationData.meta.siteTitle,
   description: invitationData.meta.ogDescription,
   openGraph: {
